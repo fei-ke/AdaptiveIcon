@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AdaptiveIcon</string>
+    <string name="xposedDescription">Change Adaptive Icon mask</string>
+</resources>
