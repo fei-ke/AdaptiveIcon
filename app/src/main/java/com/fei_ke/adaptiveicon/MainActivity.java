@@ -1,7 +1,6 @@
 package com.fei_ke.adaptiveicon;
 
 import android.content.SharedPreferences;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.PreferenceActivity;
@@ -39,8 +38,8 @@ public class MainActivity extends PreferenceActivity {
     }
 
     enum MASK {
-        DEFAULT("DEFAULT", Resources.getSystem().getString(Resources.getSystem().getIdentifier("config_icon_mask", "string", "android"))),
-        CIRCLE("CIRCLE", "M50 0A50 50,0,1,1,50 100A50 50,0,1,1,50 0"),
+        DEFAULT("DEFAULT", ""),
+        CIRCLE("CIRCLE", XposedMod.CIRCLE_MASK),
         SQUIRCLE("SQUIRCLE", "M50,0 C10,0 0,10 0,50 0,90 10,100 50,100 90,100 100,90 100,50 100,10 90,0 50,0 Z"),
         ROUNDED_SQUARE("ROUNDED_SQUARE", "M50,0L70,0 A30,30,0,0 1 100,30 L100,70 A30,30,0,0 1 70,100 L30,100 A30,30,0,0 1 0,70 L 0,30 A30,30,0,0 1 30,0z"),
         SQUARE("SQUARE", "M50,0L100,0 100,100 0,100 0,0z"),
